@@ -1,0 +1,54 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "Attention Album",
+            "price": 999,
+            "imgName": "album1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Hypeboy Album",
+            "price": 999,
+            "imgName": "album2.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Ditto Mini Album",
+            "price": 799,
+            "imgName": "album3.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Cookie Mini Album",
+            "price": 799,
+            "imgName": "album4.jpeg"
+        }
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "T-Shirt NWJS",
+            "price": 1399,
+            "imgName": "merch1.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "NWJS Signature Card",
+            "price": 1199,
+            "imgName": "merch2.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "NWJS Hand Bag",
+            "price": 1999,
+            "imgName": "merch3.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Bundle Merch",
+            "price": 3999,
+            "imgName": "merch4.jpeg"
+        }
+    ]
+}

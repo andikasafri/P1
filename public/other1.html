@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NewJeans | HOME</title>
+  <meta name="description" content="NewJeans Webpage">
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.onload = function() {
+      var titleLink = document.getElementById("title-link");
+      titleLink.addEventListener("click", function() {
+        window.location.href = "other1.html";
+      });
+    };
+  </script>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="other1.html">HOME</a></li>
+        <li><a href="/">STORE</a></li>
+      </ul>
+    </nav>
+    <h1 class="title-top" id="title-link">New Jeans</h1>
+    <div class="container">
+      <button class="btn btn-header" type="button">GET OUR LATEST ALBUM</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-header btn-play" type="button">&#9658;</button>
+    </div>
+  </header>
+
+
+
+
+
+  <section class="content-section1 container">
+    <h2 class="content-title1">Tours</h2>
+    <div>
+      <div class="tour-row">
+        <span class="tour-item tour-date">May 16</span>
+        <span class="tour-city">Korea</span>
+        <span class="tour-arena">Seoul</span>
+        <button class="btn buyticket" type="button">BUY TICKET</button>
+      </div>
+      <div class="tour-row">
+        <span class="tour-item tour-date">May 23</span>
+        <span class="tour-city">Japan</span>
+        <span class="tour-arena">Tokyo Dome</span>
+        <button class="btn buyticket" type="button">BUY TICKET</button>
+      </div>
+      <div class="tour-row">
+        <span class="tour-item tour-date">June 8</span>
+        <span class="tour-city">China</span>
+        <span class="tour-arena">China Town</span>
+        <button class="btn buyticket" type="button">BUY TICKET</button>
+      </div>
+      <div class="tour-row">
+        <span class="tour-item tour-date">June 11</span>
+        <span class="tour-city">Indonesia</span>
+        <span class="tour-arena">BSD City ICE</span>
+        <button class="btn buyticket" type="button">BUY TICKET</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+      <h2 class="newjeans-bottom">NewJeans</h2>
+      <ul class="nav footer-nav">
+        <li><a href="https://www.facebook.com/groups/1569867266791763/"><img src="images/Facebook logo.png" width="70" alt="Facebook"></a></li>
+        <li><a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"><img src="images/Spotify Logo.png" width="70" alt="Spotify"></a></li>
+        <li><a href="https://www.youtube.com/@NewJeans_official"><img src="images/Youtube logo.png" width="70" alt="Youtube"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

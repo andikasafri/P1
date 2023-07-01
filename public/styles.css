@@ -1,0 +1,433 @@
+@font-face {
+    font-family: "K26ToyBlocks123";
+    src: url(Fonts/K26ToyBlocks123.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TheGoodMonolith";
+    src: url(Fonts/TheGoodMonolith.ttf);
+}
+
+@font-face {
+    font-family: "tackyshoesDEMO";
+    src: url(Fonts/tackyshoesDEMO.otf);
+}
+
+@font-face {
+    font-family: "papercut";
+    src: url(Fonts/papercut.ttf);
+}
+
+@font-face {
+    font-family: "karma";
+    src: url(Fonts/Karma\ Future.otf);
+}
+
+@font-face {
+    font-family: "karma1";
+    src: url(Fonts/Karma\ Suture.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: TheGoodMonolith;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+    text-align: center;
+    top: 0;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+    font-size: larger;
+}
+
+.main-header {
+    background-image: url(images/newjeans.jpeg);
+    background-size: cover;
+    padding-bottom: 30px;
+    text-align: center;
+    background-position: center;
+    height: 390px;
+    background-size: cover;
+}
+
+.title-top {
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-family: "K26ToyBlocks123";
+    font-weight: normal;
+    color: rgb(247, 249, 212);
+}
+
+.content-title1 {
+    font-family: karma;
+    margin-top: 1;
+    color: #333;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 2em;
+}
+
+.content-section1 {
+    margin: 1em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.about-image {
+    float: left;
+    margin: 15px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.main-footer {
+    background-color: rgb(8, 143, 143);
+    margin-top: auto;
+}
+
+.newjeans-bottom {
+    text-align: left;
+    padding: .25em 0;
+    margin: 0;
+    font-size: 2em;
+    font-family: "K26ToyBlocks123";
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .7em 20% 3em 20%;
+    color: white;
+    border: 2px solid rgb(247, 249, 212);
+    background-color: rgba(255, 255, 255, .09);
+    border-radius: 0;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: rgb(247, 249, 212);
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+.buyticket {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    border: 2px solid antiquewhite;
+    border-radius: .3em;
+    padding: 8px 15px;
+    width: 160px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.tour-row {
+    display: flex;
+    align-items: center;
+}
+
+.tour-row span {
+    margin-right: 10px;
+}
+
+.buyticket {
+    background: linear-gradient(45deg, #ff9d00, #ff3e75, #00c6ff, #0b00ff);
+    background-size: 200% 200%;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.tour-row :last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 30%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.btn-shop {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 0;
+    border-radius: 8%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-shop:hover {
+    background-color: rgb(5, 59, 139);
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-right: 1.5em;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 15%;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: rgb(187, 4, 4);
+}
+
+.cart-quantity-input {
+    width: 50px;
+    height: 34px;
+    border-radius: 15%;
+    border: 1px solid rgb(0, 132, 255);
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.6em;
+}

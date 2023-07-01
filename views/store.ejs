@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NewJeans | HOME</title>
+  <meta name="description" content="NewJeans Webpage">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script src="store.js" defer></script>
+  <script>
+    window.onload = function() {
+      var titleLink = document.getElementById("title-link");
+      titleLink.addEventListener("click", function() {
+        window.location.href = "other1.html";
+      });
+    };
+
+    var stripePublicKey = '<%= stripePublicKey %>';
+  </script>
+</head>
+
+
+<body>
+  <header class="main-header">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="other1.html">HOME</a></li>
+        <li><a href="/">STORE</a></li>
+      </ul>
+    </nav>
+    <h1 class="title-top" id="title-link">New Jeans</h1>
+    <div class="container">
+      <button class="btn btn-header" type="button">GET OUR LATEST ALBUM</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-header btn-play" type="button">&#9658;</button>
+    </div>
+  </header>
+
+  <section class="content-section1 container">
+    <h2 class="content-title1">MUSIC</h2>
+    <div class="shop-items">
+      <% items.music.forEach(function(item){ %>
+      <div class="shop-item" data-item-id="<%= item.id %>">
+        <span class="shop-item-title"><%= item.name %></span>
+        <img class="shop-item-image" src="images/<%= item.imgName %>" alt="<%= item.name %>">
+        <div class="shop-item-details">
+          <span class="shop-item-price"><%= item.price / 100 %></span>
+          <button class="btn-shop" role="button">ADD TO CART</button>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="content-section1 container">
+    <h2 class="content-title1">MERCH</h2>
+    <div class="shop-items">
+      <% items.merch.forEach(function(item){ %>
+      <div class="shop-item" data-item-id="<% item.id %>">
+        <span class="shop-item-title"><%= item.name %></span>
+        <img class="shop-item-image" src="images/<%= item.imgName %>" width="225" alt="T-Shirt NWJS">
+        <div class="shop-item-details">
+          <span class="shop-item-price"><%= item.price / 100 %></span>
+          <button class="btn-shop" role="button">ADD TO CART</button>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="container content-section1">
+    <h2 class="content-title1">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column ">QUANTITY</span>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-total">
+      <span class="cart-total-title">Total</span>
+      <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-shop btn-purchase" role="button">PURCHASE</button>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+      <h2 class="newjeans-bottom">NewJeans</h2>
+      <ul class="nav footer-nav">
+        <li><a href="https://www.facebook.com/groups/1569867266791763/"><img src="images/Facebook logo.png" width="70" alt="Facebook"></a></li>
+        <li><a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"><img src="images/Spotify Logo.png" width="70" alt="Spotify"></a></li>
+        <li><a href="https://www.youtube.com/@NewJeans_official"><img src="images/Youtube logo.png" width="70" alt="Youtube"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
